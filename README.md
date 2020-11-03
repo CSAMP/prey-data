@@ -695,22 +695,126 @@ Table 4. Calibrated values of preyK, left blank where preyV is zero. At
 any prey concentration, higher levels of preyK correspond to lower
 feeding rates. These values were used in all subsequent analyses
 
-  Taxonomic group                                                   preyK values for all preyV not 0
-  ----------------- -- -------------------------------------------- ---------------------------------- ------------- ----------- --------
-                       Description                                  Larvae                             Post-larvae   Juveniles   Adults
-  acartela             *Acartiella sinensis* (copepod) adults                                          75            2           0.15
-  eurytem              *Eurytemora affinis* (copepod) adults                                           13            1           0.15
-  pdiapfor             *Pseudodiaptomus forbesi* (copepod) adults                                      5.2           0.9         1.5
-  othcalad             Other calanoid copepod adults                                                   13            2           0.45
-  pdiapjuv             *Pseudodiaptomus forbesi* copepodites        0.3                                0.5           3           1.5
-  othcaljuv            Other calanoid copepodites                   0.3                                0.5           5           1.5
-  limno                *Limnoithona* spp. copepods (all stages)     1.8                                4.5           10          13.5
-  othcyc               Other cyclopoid copepods (all stages)        1.2                                2.2           3           1.5
-  allcopnaup           Copepod nauplii (all spp.)                   5.4                                50                        
-  daphnia              *Daphnia* spp. (cladocerans)                                                    75            3           0.15
-  othclad              Other cladocerans                                                               50            10          0.7
-  other                All other taxa                                                                  24            15          1.5
-                                                                                                                                 
+  <table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th colspan=4>preyK values for all preyV not 0</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Taxonomic group</th>
+      <th>Description</th>
+      <th>Larvae</th>
+      <th>Post-larvae</th>
+      <th>Juveniles</th>
+      <th>Adults</th>
+    </tr>
+    <tr>
+      <td>acartela</td>
+      <td>Acartiella sinensis (copepod) adults</td>
+      <td>&nbsp;</td>
+      <td>75</td>
+      <td>2</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>eurytem</td>
+      <td>Eurytemora affinis (copepod) adults</td>
+      <td>&nbsp;</td>
+      <td>13</td>
+      <td>1</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>pdiapfor</td>
+      <td>Pseudodiaptomus forbesi (copepod) adults</td>
+      <td>&nbsp;</td>
+      <td>5.2</td>
+      <td>0.9</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>othcalad</td>
+      <td>Other calanoid copepod adults</td>
+      <td>&nbsp;</td>
+      <td>13</td>
+      <td>2</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>pdiapjuv</td>
+      <td>Pseudodiaptomus forbesi copepodites</td>
+      <td>0.3</td>
+      <td>0.5</td>
+      <td>3</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>othcaljuv</td>
+      <td>Other calanoid copepodites</td>
+      <td>0.3</td>
+      <td>0.5</td>
+      <td>5</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>limno</td>
+      <td>Limnoithona spp. copepods (all stages)</td>
+      <td>1.8</td>
+      <td>4.5</td>
+      <td>10</td>
+      <td>13.5</td>
+    </tr>
+    <tr>
+      <td>othcyc</td>
+      <td>Other cyclopoid copepods (all stages)</td>
+      <td>1.2</td>
+      <td>2.2</td>
+      <td>3</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>allcopnaup</td>
+      <td>Copepod nauplii (all spp.)</td>
+      <td>5.4</td>
+      <td>50</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>daphnia</td>
+      <td>Daphnia spp. (cladocerans)</td>
+      <td>&nbsp;</td>
+      <td>75</td>
+      <td>3</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>othclad</td>
+      <td>Other cladocerans</td>
+      <td>&nbsp;</td>
+      <td>50</td>
+      <td>10</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>All other taxa</td>
+      <td>&nbsp;</td>
+      <td>24</td>
+      <td>15</td>
+      <td>1.5</td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
 
 Table 5. Summary statistics for maximum proportional feeding rate (Eqn.
 1) using parameters in Table 4. Parameters preyK for the calibration
@@ -718,36 +822,108 @@ period were adjusted to get a mean proportional feeding rate of \~0.75.
 Parameters were then used for the validation period without adjustment.
 N is total number of samples, and all maxima were over 0.97.
 
-  -------------------- ----- ------------- -------- ---------
-  Calibration period
-  Larvae
-  Post-larvae
-  Juveniles
-  Adults
-  Validation period
-  Larvae
-  Post-larvae
-  Juveniles
-  Adults
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>Mean ± SD</th>
+      <th>Median</th>
+      <th>Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan=5 style="text-align:center">Calibration period</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Larvae</td>
+      <td>420</td>
+      <td>0.75 ± 0.18</td>
+      <td>0.79</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Post-larvae</td>
+      <td>597</td>
+      <td>0.75 ± 0.18</td>
+      <td>0.79</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Juveniles</td>
+      <td>813</td>
+      <td>0.75 ± 0.17</td>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Adults</td>
+      <td>268</td>
+      <td>0.76 ± 0.13</td>
+      <td>0.77</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td colspan=5 style="text-align:center">Validation period</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Larvae</td>
+      <td>329</td>
+      <td>0.77 ± 0.17</td>
+      <td>0.83</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Post-larvae</td>
+      <td>439</td>
+      <td>0.76 ± 0.16</td>
+      <td>0.79</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Juveniles</td>
+      <td>659</td>
+      <td>0.71 ± 0.18</td>
+      <td>0.75</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Adults</td>
+      <td>329</td>
+      <td>0.78 ± 0.12</td>
+      <td>0.79</td>
+      <td>0.49</td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
 
 Figure 1. Flow diagram summarizing the process for preparing zooplankton
 biomass data for input to the IBM. Each text box represents a process,
 and blue gridded boxes represent matrices or arrays of data.
 
-![](./media/image2.png){width="6.339901574803149in" height="7.15in"}
+![](./media/image2.png)
 
 Figure 2. Flow diagram summarizing the process for determining preyV and
 preyK values for input to the IBM. Shapes as in Fig. 1.
-![](./media/image3.png){width="6.005217629046369in"
-height="8.058333333333334in"}
+![](./media/image3.png)
 
 Figure 3. Boxplot of the proportion of maximum consumption (C<sub>j</sub>' in
 Eqn. 1) by spatial box by delta smelt life stage for the calibration and
 validation periods.
 
 ![A screenshot of a cell phone Description automatically
-generated](./media/image4.png){width="6.8125in"
-height="4.6819444444444445in"}
+generated](./media/image4.png)
 
 Figure 4. Calibration period. Prey available and feeding by larval delta
 smelt. Upper panel shows relative biomass of prey taxa and lower panel
@@ -757,53 +933,44 @@ selected from the total available (Table 5) and ordered to keep similar
 samples close together. Labels on the X axis denote year-month-Box.
 Taxon names are identified in Table 3.
 
-![](./media/image5.png){width="7.509922353455818in"
-height="5.159722222222222in"}
+![](./media/image5.png)
 
 Figure 5. As in Fig. 4 for postlarvae.
 
-![](./media/image6.png){width="7.550352143482065in" height="5.1875in"}
+![](./media/image6.png)
 
 Figure 6. As in Fig. 4 for juveniles.
 
-![](./media/image7.png){width="7.530136701662292in"
-height="5.173611111111111in"}
+![](./media/image7.png)
 
 Figure 7. As in Fig. 4 for adults.
 
-![](./media/image8.png){width="7.520029527559055in"
-height="5.166666666666667in"}
+![](./media/image8.png)
 
 Figure 8. As in Fig. 4 for larvae in the validation period.
 
-![](./media/image9.png){width="7.504780183727034in"
-height="5.156522309711286in"}
+![](./media/image9.png)
 
 Figure 9. As in Fig. 4 for postlarvae in the validation period.
 
-![](./media/image10.png){width="7.466813210848644in"
-height="5.130435258092739in"}
-
+![](./media/image10.png)
 Figure 10. As in Fig. 4 for juveniles in the validation period.
 
-![](./media/image11.png){width="7.5047779965004375in"
-height="5.156521216097988in"}
+![](./media/image11.png)
 
 Figure 11. As in Fig. 4 for adults in the validation period.
 
-![](./media/image12.png){width="7.530089676290464in"
-height="5.173912948381452in"}
+![](./media/image12.png)
 
 Figure 12. Fraction of maximum feeding rate vs. year by life stage for
 Delta (boxes 1-6) and Suisun Bay and Marsh. Values are means by year for
 the season of abundance of the life stage.
 
 ![A screenshot of a cell phone Description automatically
-generated](./media/image13.png){width="7.558217410323709in"
-height="5.194444444444445in"}\
+generated](./media/image13.png)
+
 Figure 13. Data in Fig. 12 arranged as boxplots for three time periods
 reflecting major periods of change in the estuarine food web.
 
 ![A picture containing screenshot Description automatically
-generated](./media/image14.png){width="7.5582163167104115in"
-height="5.194444444444445in"}
+generated](./media/image14.png)
