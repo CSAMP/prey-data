@@ -134,9 +134,9 @@ not recorded at any station, and these four values were dropped.
 Equation 10 in Rose et al. (2013a) specifies the realized ingestion rate
 of a given prey group by an individual fish, rearranged here:
 
-(1)
+<img src="https://render.githubusercontent.com/render/math?math={C_j}'=\frac{C_j}{WC_{max}}=\frac{\frac{Z_jV_j}{K_j}}{1 %2B\sum_{all\ k}{\frac{Z_kV_k}{K_k}}}">
 
-where C~j~' is the ratio of ingestion rate to the maximum C~max~ scaled
+where C<sub>j</sub>' is the ratio of ingestion rate to the maximum C~max~ scaled
 to the weight of the fish W; that is, C~j~' is a measure of the
 “success” of the fish because the growth rate of the fish will be
 maximized when C~j~' is 1. Z~j~ is biomass of taxon j, V~j~ is
