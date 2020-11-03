@@ -1,4 +1,4 @@
-**Methods for preparing zooplankton data for model input**
+# Methods for preparing zooplankton data for model input
 
 **Revised 12/27/2019**
 
@@ -7,14 +7,14 @@ inputs of zooplankton food for delta smelt (Appendix A in Rose et al.
 2013a) have been altered in various ways to accommodate the objectives
 and design of this project (Table 1). In the previous version,
 zooplankton in six taxonomic groups were used to represent food of delta
-smelt. Data on abundance (number m^-3^) were obtained from the
+smelt. Data on abundance (number m<sup>-3</sup>) were obtained from the
 Interagency Ecological Program zooplankton monitoring database and the
 CDFW 20-mm survey. The zooplankton program has collected zooplankton
 abundance data monthly at 16–22 stations during the period represented
 by the model of 1995–2005. The 20-mm survey has sampled at 49–52
 stations each year, generally during March or April to July. These were
 used with estimates of carbon mass per individual to obtain estimates of
-biomass (mgC m^-3^) for each taxon (species or higher taxonomic level)
+biomass (mgC m<sup>-3</sup>) for each taxon (species or higher taxonomic level)
 and major life stage. Data for each taxon, spatial box, and sampling
 date were increased by a small number (to allow for zeros),
 log-transformed, and averaged. Then data were interpolated to each date
@@ -129,24 +129,24 @@ salinity recorded at the movable stations to distance. This was then
 used to assign the movable stations to boxes. In four cases salinity was
 not recorded at any station, and these four values were dropped.
 
-**Selecting taxonomic groups**
+## Selecting taxonomic groups
 
 Equation 10 in Rose et al. (2013a) specifies the realized ingestion rate
 of a given prey group by an individual fish, rearranged here:
 
 <img src="https://render.githubusercontent.com/render/math?math={C_j}'=\frac{C_j}{WC_{max}}=\frac{\frac{Z_jV_j}{K_j}}{1 %2B\sum_{all\ k}{\frac{Z_kV_k}{K_k}}}">
 
-where C<sub>j</sub>' is the ratio of ingestion rate to the maximum C~max~ scaled
-to the weight of the fish W; that is, C~j~' is a measure of the
+where C<sub>j</sub>' is the ratio of ingestion rate to the maximum C<sub>max</sub> scaled
+to the weight of the fish W; that is, C<sub>j</sub>' is a measure of the
 “success” of the fish because the growth rate of the fish will be
-maximized when C~j~' is 1. Z~j~ is biomass of taxon j, V~j~ is
+maximized when C<sub>j</sub>' is 1. Z<sub>j</sub> is biomass of taxon j, V<sub>j</sub> is
 vulnerability, a switch (0 or 1) to turn feeding on the species group on
-or off, and K~j~ is the half-saturation constant. Subscripts j refer to
+or off, and K<sub>j</sub> is the half-saturation constant. Subscripts j refer to
 the individual prey group, which may be one or more life stages,
 species, or other groupings, and k refers to all prey groups. With only
 one prey group Eqn. 2 reduces to the familiar Holling Type II functional
 response, a rectangular hyperbola, in which the maximum is 1 and the
-half-saturation constant is K~j~.
+half-saturation constant is K<sub>j</sub>.
 
 If two or more species groups have the same V and K parameters, total
 mass consumption by a fish does not change if the groups are entered
@@ -171,34 +171,34 @@ keeping them separate are:
 
 5.  No more than 12 prey groups
 
-    Based on these criteria we selected 12 zooplankton groups (Table 3).
-    Copepods include adults of two species, adults and juveniles of two
-    species combined (*Limnoithona* spp.), juveniles of three species
-    (*Pseudodiaptomus* spp.), other calanoid adults and juveniles, other
-    cyclopoids, and copepod nauplii (larvae). Additional taxa are
-    *Daphnia* spp. cladocera, other cladocera, and other taxa.
+Based on these criteria we selected 12 zooplankton groups (Table 3).
+Copepods include adults of two species, adults and juveniles of two
+species combined (*Limnoithona* spp.), juveniles of three species
+(*Pseudodiaptomus* spp.), other calanoid adults and juveniles, other
+cyclopoids, and copepod nauplii (larvae). Additional taxa are
+*Daphnia* spp. cladocera, other cladocera, and other taxa.
 
-    **Developing master zooplankton data set**
+## Developing master zooplankton data set
 
-    The sampling programs report abundance (number m^-3^) based on
-    counts of subsamples. I converted these to biomass using carbon mass
-    measured on several adult copepods and other taxa (e.g., Kimmerer
-    2006, Gould and Kimmerer 2010, Kimmerer et al. 2017). Copepodites
-    (juvenile copepods) were assumed to have about 25% of the carbon
-    mass of adults based on their median life stage (copepodite 3) and
-    the ratios of copepodite to adult masses for several species
-    discussed in the above references. Masses for several other taxa
-    were estimated from their size using literature values.
+The sampling programs report abundance (number m<sup>-3</sup>) based on
+counts of subsamples. I converted these to biomass using carbon mass
+measured on several adult copepods and other taxa (e.g., Kimmerer
+2006, Gould and Kimmerer 2010, Kimmerer et al. 2017). Copepodites
+(juvenile copepods) were assumed to have about 25% of the carbon
+mass of adults based on their median life stage (copepodite 3) and
+the ratios of copepodite to adult masses for several species
+discussed in the above references. Masses for several other taxa
+were estimated from their size using literature values.
 
-    *Large zooplankton* were collected with 154–160 µm mesh nets towed
-    obliquely through the water column. I used the combined data from
-    all zooplankton monitoring studies. The first steps were to remove
-    taxa that were not reported in the EMP zooplankton database and
-    those with a mean biomass among all samples less than 0.05 mgC
-    m^-3^. Then I examined the biomass of each taxon in the three
-    databases, as well as biomass in the low-salinity zone and the Cache
-    Slough complex. There was general agreement among the databases and
-    locations for most taxa.
+*Large zooplankton* were collected with 154–160 µm mesh nets towed
+obliquely through the water column. I used the combined data from
+all zooplankton monitoring studies. The first steps were to remove
+taxa that were not reported in the EMP zooplankton database and
+those with a mean biomass among all samples less than 0.05 mgC
+m<sup>-3</sup>. Then I examined the biomass of each taxon in the three
+databases, as well as biomass in the low-salinity zone and the Cache
+Slough complex. There was general agreement among the databases and
+locations for most taxa.
 
 Biomass data were natural-log-transformed with zeros in the original
 data flagged and replaced with a value of -5 which is below the minimum
@@ -241,7 +241,7 @@ this probability the result is set to zero.
 
 *Small zooplankton* (collected with a pump, EMP only): The pump sample
 is filtered through a 154 µm mesh before it is concentrated at 45 µm for
-counting, so the values (m^-3^) calculated from counts of the net and
+counting, so the values (m<sup>-3</sup>) calculated from counts of the net and
 the pump samples are considered additive. The pump collects mostly
 rotifers, nauplii, and small copepods such as *Limnoithona* spp.
 Rotifers have been uncommon in the estuary since the late 1980s, and
@@ -256,7 +256,7 @@ interpolation. Also no monitoring data for small zooplankton have been
 gathered in the Cache Slough complex, so the means of Boxes 4 and 5 were
 used to populate Box 12.
 
-**Feeding rate parameters and outcomes**
+## Feeding rate parameters and outcomes
 
 Values of preyK and preyV (Eqn. 1, Fig. 2) were determined iteratively
 to achieve three objectives: 1) Set the mean proportion of maximum
@@ -278,7 +278,7 @@ samples have been taken there, and that region has not been sampled for
 most of the period of record. The data for each sample date, box, and
 taxon included the mean natural log of biomass (zeros excluded) and the
 proportion of zeros. Antilogs of the means were enhanced by half of the
-variance (0.84^2^/2) to account for the skewness in the lognormal
+variance (0.84<sup>2</sup>/2) to account for the skewness in the lognormal
 distribution. Then the antilog values were multiplied by the proportion
 of zeros in the raw data. The values resulting from this calculation
 were used to calculate feeding by each life stage for months when these
@@ -312,7 +312,7 @@ these iteratively by changing values by small amounts, then comparing
 proportional consumption with literature reports. Then the preyK values
 with non-zero preyV values for each stage (i.e, the prey that could be
 consumed by the stage) were adjusted up or down proportionally until the
-mean value of the proportion of maximum consumption (C~j~' in Eqn. 1)
+mean value of the proportion of maximum consumption (C<sub>j</sub>' in Eqn. 1)
 was close to 0.75. These preyK values (Table 4) were then used in a
 similar analysis for the validation period, and as initial input to the
 IBM.
@@ -329,8 +329,7 @@ zooplankton during the low-flow spring and early summer. Values for
 juveniles were generally higher in boxes 1–5 than in boxes 7-11,
 reflecting low abundance of adult and juvenile *P. forbesi* (see below).
 
-To examine feeding by prey type with the selected values of preyK (Eqn.
-1) I took 50 random samples from data for each life stage, sorted the
+To examine feeding by prey type with the selected values of preyK (Eqn.1) I took 50 random samples from data for each life stage, sorted the
 samples to make adjacent samples most similar in relative prey
 composition, and plotted the proportions by biomass of each taxon in the
 available prey and in the calculated daily consumption by taxon from
@@ -388,53 +387,34 @@ anomalous in its pattern.
 Table 1. Changes made to algorithm for assigning zooplankton abundance
 to boxes.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Feature**             **Rose et al. 2013a**                                                  **Changes in current version**
-  ----------------------- ---------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------
-  Time frame              1995–2005                                                              Water years 1991–2001 for calibration, 2001–2011 for validation
+| **Feature** | **Rose et al. 2013a** | **Changes in current version** |
+| --- | --- | --- |
+| Time frame | 1995–2005 | Water years 1991–2001 for calibration, 2001–2011 for validation |
+| Number of taxa | 6 | 10 large 2 small |
+| Method for zero catch | e-8 for large zoops, e-4 small so data could be log transformed. | Zero-inflated method with two parameters per box &amp; day: mean of ln(biomass) for non-zero values, and proportion zeros. |
+| Standard deviation | Calculated and expanded as for mean | Constant value of 0.84 based on data |
+| Number of boxes | 11 | 12 with CSC split off from Box 1 (Sac) |
+| Stations included | 41 from 20mm, 29 EMP | 51 from 20mm, 45 TNS, 41 MWT, 30 EMP + ~30 salinity-based stations/year starting 1994 |
+| EMP sampling | Monthly sampling | Before 1989 EMP sampled twice monthly but not in winter.1990-1993 throughout year; from 1994 monthly at ~40% of stations, and added 2–4 salinity-based stations. |
+| 20mm sampling | Consistent | Box 12 1 station 1995, up to 12 by 2011 |
+| TNS sampling | NA | Started in 2005 |
+| MWT sampling | NA | Started in 2005 |
 
-  Number of taxa          6                                                                      10 large 2 small
-
-  Method for zero catch   e^-8^ for large zoops, e^-4^ small so data could be log transformed.   Zero-inflated method with two parameters per box & day: mean of ln(biomass) for non-zero values, and proportion zeros.
-
-  Standard deviation      Calculated and expanded as for mean                                    Constant value of 0.84 based on data
-
-  Number of boxes         11                                                                     12 with CSC split off from Box 1 (Sac)
-
-  Stations included       41 from 20mm, 29 EMP                                                   51 from 20mm, 45 TNS, 41 MWT,
-                                                                                                 
-                                                                                                 30 EMP + \~30 salinity-based stations/year starting 1994
-
-  EMP sampling            Monthly sampling                                                       Before 1989 EMP sampled twice monthly but not in winter.
-                                                                                                 
-                                                                                                 1990-1993 throughout year; from 1994 monthly at \~40% of stations, and added 2–4 salinity-based stations.
-
-  20mm sampling           Consistent                                                             Box 12 1 station 1995, up to 12 by 2011
-
-  TNS sampling            NA                                                                     Started in 2005
-
-  MWT sampling            NA                                                                     Started in 2005
-
-                                                                                                 
-
-                                                                                                 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-~\
-~
+<br/>
 
 Table 2. Characteristics of data sources for zooplankton abundance. All
 programs continue, but years listed include all for which data were
 available in May 2017.
 
-  Source                       Years        Months      Stations     Net mesh   Small zoops
-  ---------------------------- ------------ ----------- ------------ ---------- -------------
-  Zooplankton monitoring       1972–2017    Jan–Dec\*   37 ( 6–60)   154 µm     45–154 µm
-  20mm survey                  1995–2016    Mar–Aug     41 ( 5–52)   160 um     —
-  Summer townet survey         2005­–2015   Jun–Aug     32 ( 9–32)   160 um     —
-  Fall midwater trawl survey   2005­–2015   Sep–Dec     32 (23–40)   160 um     —
-
+| Source | Years | Months | Stations | Net mesh | Small zoops |
+| --- | --- | --- | --- | --- | --- |
+| Zooplankton monitoring | 1972–2017 | Jan–Dec\* | 37 ( 6–60) | 154 µm | 45–154 µm |
+| 20mm survey | 1995–2016 | Mar–Aug | 41 ( 5–52) | 160 um | — |
+| Summer townet survey | 2005­–2015 | Jun–Aug | 32 ( 9–32) | 160 um | — |
+| Fall midwater trawl survey | 2005­–2015 | Sep–Dec | 32 (23–40) | 160 um | — |
 \* Mar–Nov in 1972–1976 and 1984–1994
+
+<br/>
 
 Table 3. Zooplankton taxonomic groups and links to individual taxa. The
 size class is based on either sampling with a net (Large) or pump
@@ -442,47 +422,274 @@ size class is based on either sampling with a net (Large) or pump
 program. Taxon names are the species codes unless the group includes
 &gt;1 code.
 
-  Size class   Species code   Genus               Species          Taxon name   Comments
-  ------------ -------------- ------------------- ---------------- ------------ ---------------------------------------------------------------------------------------------------------------------------------
-  Large        acartela       *Acartiella*        *sinensis*       acartela     Prominent in diets in late summer (Start 1994)
-               daphnia        *Daphnia*           spp.             daphnia      Very abundant in freshwater
-               eurytem        *Eurytemora*        *affinis*        eurytem      Historically abundant, still common in spring
-               pdiapfor       *Pseudodiaptomus*   *forbesi*        pdiapfor     Most common prey (Starting 1989)
-               pdiapjuv       *Pseudodiaptomus*   spp.             pdiapjuv     Second most abundant zoop group (Starting 1990)
-               acartia        *Acartia*           spp.             othcalad     Other calanoid adults. These collectively are important prey but no particular species is that abundant in delta smelt habitat.
-               diaptom        *Diaptomus*         spp.             othcalad     
-               osphran        *Osphranticum*      *labronectum*    othcalad     
-               pdiapeu        *Pseudodiaptomus*   *euryhalinus*    othcalad     
-               pdiapmar       *Pseudodiaptomus*   *marinus*        othcalad     
-               sinocal        *Sinocalanus*       *doerrii*        othcalad     
-               tortanus       *Tortanus*          sp.              othcalad     
-               othcalad                                            othcalad     
-               acarjuv        *Acartia*                            othcaljuv    Other calanoid copepodites - as for other calanoid adults.
-               asinejuv       *Acartiella*                         othcaljuv    
-               diaptjuv       *Diaptomus*                          othcaljuv    
-               euryjuv        *Eurytemora*        *affinis*        othcaljuv    
-               sinocaljuv     *Sinocalanus*                        othcaljuv    
-               tortjuv        *Tortanus*                           othcaljuv    
-               othcaljuv                                           othcaljuv    
-               avernal        *Acanthocyclops*    *vernalis*       othcyc       Cyclopoid copepods (all stages) can be abundant at times and occur in delta smelt guts.
-               oithdav        *Oithona*           *davisae*        othcyc       
-               oithsim        *Oithona*           *similis*        othcyc       
-               oithspp        *Oithona*           spp              othcyc       
-               cycjuv                                              othcyc       
-               othcycad                                            othcyc       
-               bosmina        *Bosmina*           *longirostris*   othclad      Other cladocera can be abundant at times.
-               ceriodap       *Ceriodaphnia*      spp.             othclad      
-               diaphan        *Diaphanosoma*      spp.             othclad      
-               othclado                                            othclad      
-               harpact                                             other        Other taxa to complete the list
-               annelid                                             other        
-               barnnaup                                            other        
-               chironomid                                          other        
-               crabzoea                                            other        
-               cumac                                               other        
-               ostrac                                              other        
-  Small        limno          *Limnoithona*       spp.             limno        Extremely abundant, sometimes eaten (Start 1994)
-               allcopnaup                                          copnaup      Copepod nauplii eaten by larvae
+<table>
+  <thead>
+    <tr>
+      <th>Size class</th>
+      <th>Species code</th>
+      <th>Genus</th>
+      <th>Species</th>
+      <th>Taxon name</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan=37>Large</td>
+      <td>acartela</td>
+      <td>Acartiella</td>
+      <td>sinensis</td>
+      <td>acartela</td>
+      <td>Prominent in diets in late summer (Start 1994)</td>
+    </tr>
+    <tr>
+      <td>daphnia</td>
+      <td>Daphnia</td>
+      <td>spp.</td>
+      <td>daphnia</td>
+      <td>Very abundant in freshwater</td>
+    </tr>
+    <tr>
+      <td>eurytem</td>
+      <td>Eurytemora</td>
+      <td>affinis</td>
+      <td>eurytem</td>
+      <td>Historically abundant, still common in spring</td>
+    </tr>
+    <tr>
+      <td>pdiapfor</td>
+      <td>Pseudodiaptomus</td>
+      <td>forbesi</td>
+      <td>pdiapfor</td>
+      <td>Most common prey (Starting 1989)</td>
+    </tr>
+    <tr>
+      <td>pdiapjuv</td>
+      <td>Pseudodiaptomus</td>
+      <td>spp.</td>
+      <td>pdiapjuv</td>
+      <td>Second most abundant zoop group (Starting 1990)</td>
+    </tr>
+    <tr>
+      <td>acartia</td>
+      <td>Acartia</td>
+      <td>spp.</td>
+      <td>othcalad</td>
+      <td rowspan=8>
+        Other calanoid adults. These collectively are important prey but no
+        particular species is that abundant in delta smelt habitat.
+      </td>
+    </tr>
+    <tr>
+      <td>diaptom</td>
+      <td>Diaptomus</td>
+      <td>spp.</td>
+      <td>othcalad</td>
+    </tr>
+    <tr>
+      <td>osphran</td>
+      <td>Osphranticum</td>
+      <td>labronectum</td>
+      <td>othcalad</td>
+    </tr>
+    <tr>
+      <td>pdiapeu</td>
+      <td>Pseudodiaptomus</td>
+      <td>euryhalinus</td>
+      <td>othcalad</td>
+    </tr>
+    <tr>
+      <td>pdiapmar</td>
+      <td>Pseudodiaptomus</td>
+      <td>marinus</td>
+      <td>othcalad</td>
+    </tr>
+    <tr>
+      <td>sinocal</td>
+      <td>Sinocalanus</td>
+      <td>doerrii</td>
+      <td>othcalad</td>
+    </tr>
+    <tr>
+      <td>tortanus</td>
+      <td>Tortanus</td>
+      <td>sp.</td>
+      <td>othcalad</td>
+    </tr>
+    <tr>
+      <td>othcalad</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>othcalad</td>
+    </tr>
+    <tr>
+      <td>acarjuv</td>
+      <td>Acartia</td>
+      <td>&nbsp;</td>
+      <td>othcaljuv</td>
+      <td rowspan=6>Other calanoid copepodites - as for other calanoid adults.</td>
+    </tr>
+    <tr>
+      <td>asinejuv</td>
+      <td>Acartiella</td>
+      <td>&nbsp;</td>
+      <td>othcaljuv</td>
+    </tr>
+    <tr>
+      <td>diaptjuv</td>
+      <td>Diaptomus</td>
+      <td>&nbsp;</td>
+      <td>othcaljuv</td>
+    </tr>
+    <tr>
+      <td>euryjuv</td>
+      <td>Eurytemora</td>
+      <td>affinis</td>
+      <td>othcaljuv</td>
+    </tr>
+    <tr>
+      <td>sinocaljuv</td>
+      <td>Sinocalanus</td>
+      <td>&nbsp;</td>
+      <td>othcaljuv</td>
+    </tr>
+    <tr>
+      <td>tortjuv</td>
+      <td>Tortanus</td>
+      <td>&nbsp;</td>
+      <td>othcaljuv</td>
+    </tr>
+    <tr>
+      <td>othcaljuv</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>othcaljuv</td>
+    </tr>
+    <tr>
+      <td>avernal</td>
+      <td>Acanthocyclops</td>
+      <td>vernalis</td>
+      <td>othcyc</td>
+      <td rowspan=6>
+        Cyclopoid copepods (all stages) can be abundant at times and occur in
+        delta smelt guts.
+      </td>
+    </tr>
+    <tr>
+      <td>oithdav</td>
+      <td>Oithona</td>
+      <td>davisae</td>
+      <td>othcyc</td>
+    </tr>
+    <tr>
+      <td>oithsim</td>
+      <td>Oithona</td>
+      <td>similis</td>
+      <td>othcyc</td>
+    </tr>
+    <tr>
+      <td>oithspp</td>
+      <td>Oithona</td>
+      <td>spp</td>
+      <td>othcyc</td>
+    </tr>
+    <tr>
+      <td>cycjuv</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>othcyc</td>
+    </tr>
+    <tr>
+      <td>othcycad</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>othcyc</td>
+    </tr>
+    <tr>
+      <td>bosmina</td>
+      <td>Bosmina</td>
+      <td>longirostris</td>
+      <td>othclad</td>
+      <td rowspan=4>Other cladocera can be abundant at times.</td>
+    </tr>
+    <tr>
+      <td>ceriodap</td>
+      <td>Ceriodaphnia</td>
+      <td>spp.</td>
+      <td>othclad</td>
+    </tr>
+    <tr>
+      <td>diaphan</td>
+      <td>Diaphanosoma</td>
+      <td>spp.</td>
+      <td>othclad</td>
+    </tr>
+    <tr>
+      <td>othclado</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>othclad</td>
+    </tr>
+    <tr>
+      <td>harpact</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>other</td>
+      <td rowspan=7>Other taxa to complete the list</td>
+    </tr>
+    <tr>
+      <td>annelid</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>other</td>
+    </tr>
+    <tr>
+      <td>barnnaup</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>other</td>
+    </tr>
+    <tr>
+      <td>chironomid</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>other</td>
+    </tr>
+    <tr>
+      <td>crabzoea</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>other</td>
+    </tr>
+    <tr>
+      <td>cumac</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>other</td>
+    </tr>
+    <tr>
+      <td>ostrac</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>other</td>
+    </tr>
+    <tr>
+      <td rowspan=2>Small</td>
+      <td>limno</td>
+      <td>Limnoithona</td>
+      <td>spp.</td>
+      <td>limno</td>
+      <td>Extremely abundant, sometimes eaten (Start 1994)</td>
+    </tr>
+    <tr>
+      <td>allcopnaup</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>copnaup</td>
+      <td>Copepod nauplii eaten by larvae</td>
+    </tr>
+  </tbody>
+</table>
 
 Table 4. Calibrated values of preyK, left blank where preyV is zero. At
 any prey concentration, higher levels of preyK correspond to lower
@@ -534,7 +741,7 @@ preyK values for input to the IBM. Shapes as in Fig. 1.
 ![](./media/image3.png){width="6.005217629046369in"
 height="8.058333333333334in"}
 
-Figure 3. Boxplot of the proportion of maximum consumption (C~j~' in
+Figure 3. Boxplot of the proportion of maximum consumption (C<sub>j</sub>' in
 Eqn. 1) by spatial box by delta smelt life stage for the calibration and
 validation periods.
 
@@ -545,7 +752,7 @@ height="4.6819444444444445in"}
 Figure 4. Calibration period. Prey available and feeding by larval delta
 smelt. Upper panel shows relative biomass of prey taxa and lower panel
 shows relative feeding on each taxon, with the heavy line indicating the
-proportion of maximum consumption (C~j~' in Eqn. 1). Data were randomly
+proportion of maximum consumption (C<sub>j</sub>' in Eqn. 1). Data were randomly
 selected from the total available (Table 5) and ordered to keep similar
 samples close together. Labels on the X axis denote year-month-Box.
 Taxon names are identified in Table 3.
