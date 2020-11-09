@@ -1,4 +1,12 @@
-# Methods for preparing zooplankton data for model input
+# File Names 
+The prey datasets are organized into two file types: Zoop giving biomass estimates and Zoop.P0 giving proportion zeros. Each file type is further divided into 12 taxonomic groupings, for a total of 24 prey files. Files are named with taxonomic codes, which can be found below in Table 3. Individual prey species within each taxonomic grouping can be found in Table 2.
+
+# Data Format
+Within each prey file is a matrix, where rows represent time (days), and columns 3-14 represent space. Columns 1 and 2 indicate year and Julian day, respectively. Data for the 12 spatial strata are ordered Sacramento R., South Delta, East Delta, Lower Sacramento R., Lower San Joaquin R.,  Confluence, SE Suisun, NE Suisun, Suisun Marsh, SW Suisun, NW Suisun, Yolo Bypass. 
+
+A map of Delta spatial strata can be found in Fig. 2.3.2 [here](http://delta-sdm-data.s3.amazonaws.com/Peterson+et+al+2019+Bay-Delta+Structured+Decision+Making+Rapid+Protyping.pdf)
+
+# Methods for Preparing Zooplankton Data for Model Input
 
 **Revised 12/27/2019**
 
