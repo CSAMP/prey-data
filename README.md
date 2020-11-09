@@ -4,7 +4,8 @@ The prey datasets are organized into two file types: Zoop giving biomass estimat
 # Data Format
 Within each prey file is a matrix, where rows represent time (days), and columns 3-14 represent space. Columns 1 and 2 indicate year and Julian day, respectively. Data for the 12 spatial strata are ordered Sacramento R., South Delta, East Delta, Lower Sacramento R., Lower San Joaquin R.,  Confluence, SE Suisun, NE Suisun, Suisun Marsh, SW Suisun, NW Suisun, Yolo Bypass. 
 
-A map of Delta spatial strata can be found in Fig. 2.3.2 [here](http://delta-sdm-data.s3.amazonaws.com/Peterson+et+al+2019+Bay-Delta+Structured+Decision+Making+Rapid+Protyping.pdf)
+![](./media/fig2-3-2.png)
+
 
 # Methods for Preparing Zooplankton Data for Model Input
 
